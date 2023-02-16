@@ -138,11 +138,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,9 +159,9 @@
   },
   "active": "5a789cd395a5959e",
   "lastOpenFiles": [
+    "BigData/Spark/RDD算子.md",
     "未命名 1.canvas",
     "未命名.canvas",
-    "BigData/Spark/RDD算子.md",
     "个人简历.md"
   ]
 }
