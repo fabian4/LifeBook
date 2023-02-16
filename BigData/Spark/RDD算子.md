@@ -3,12 +3,13 @@
 # 一、HelloWord
 
 ## 首先来引入一个WordCount的例子
+---
 
 ~~~scala
 import org.apache.spark.rdd.RDD 
 
 // 这里的下划线"_"是占位符，代表数据文件的根目录 
-val rootPath: String = _ val file: String = s"${rootPath}/wikiOfSpark.txt" 
+val rootPath: String = _ val file: String = s"${rootPath}/text.txt" 
 
 // 读取文件内容 
 val lineRDD: RDD[String] = spark.sparkContext.textFile(file) 
@@ -42,6 +43,7 @@ RDD有四大属性：
 -   compute：转换函数 —— 即 从上一种形态转变为当前形态的方式
 
 ## RDD的编程模型和延迟计算
+---
 
 > 编程模型指导我们如何进行代码实现，而延迟计算是Spark分布式运行机制的基础。
 
@@ -62,3 +64,29 @@ RDD有四大属性：
 2.  通过Actions类算子，以**回溯的方式去触发执行**这个计算流图。
 
 > 开发者调用的各类Transformations算子，并不立即执行计算，当且仅当开发者调用Actions算子时，之前调用的转换算子才会付诸执行。这就被称为 “**延迟计算**”（Lazy Evaluation）。
+
+# 二、RDD算子
+
+> Spark官网给出的算子：https://spark.apache.org/docs/latest/rdd-programming-guide.html
+
+## Transformations类算子
+---
+
+| 适用范围  |   算子用途    |                            算子合集                            |
+|:---------:|:-------------:|:--------------------------------------------------------------:|
+|  任意RDD  | RDD内数据转化 | map / flatmap / fliter / mapPartitons / mapPartitionsWithIndex |
+| Parid RDD | RDD内数据聚合 |     groupByKey / sortByKey / reduceByKey / aggregateByKey      |
+|  任意RDD  | RDD间数据整合 |       union / intersection / join / cogroup / cartesian        |
+|  任意RDD  |   数据整理    |                       sample / distinct                        |
+|  任意RDD  |   数据分布    |  coalesce / repartition / repartitionAndSortWithinPartitions   | 
+
+
+
+## Actions类算子
+---
+
+| 适用范围 |  算子用途  |                         算子集合                          |
+|:--------:|:----------:|:---------------------------------------------------------:|
+| 任意RDD  |  数据收集  | collect / first / take / count / takeSample / takeOrdered |
+| 任意RDD  | 数据持久化 |  saveAsTextFile / saveAsSequenceFile / saveAsObjectFile   |
+| 任意RDD  |  数据遍历  |                          foreach                          |
