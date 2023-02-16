@@ -1,6 +1,6 @@
 {
-  "commitMessage": "Obsidian backup: {{date}}",
-  "autoCommitMessage": "Obsidian backup: {{date}}",
+  "commitMessage": "Obsidian backup: {{numFiles}}",
+  "autoCommitMessage": "Obsidian backup: {{numFiles}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
@@ -9,7 +9,7 @@
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
-  "listChangedFilesInMessageBody": true,
+  "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
