@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3bb91788fc73bf86",
+        "id": "7428752a59a262e4",
         "type": "tabs",
         "children": [
           {
-            "id": "5a789cd395a5959e",
+            "id": "d85ff7808f7d147e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BigData/Spark/RDD算子.md",
+                "file": "Gateway/ShenYu/ShenYu - Nacos 配置同步.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.5,
-    "collapsed": true
+    "width": 254.5
   },
   "right": {
     "id": "e9276581506ac5d0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BigData/Spark/RDD算子.md",
+                "file": "Gateway/ShenYu/ShenYu - Nacos 配置同步.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BigData/Spark/RDD算子.md",
+                "file": "Gateway/ShenYu/ShenYu - Nacos 配置同步.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BigData/Spark/RDD算子.md"
+                "file": "Gateway/ShenYu/ShenYu - Nacos 配置同步.md"
               }
             }
           },
@@ -147,18 +146,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "canvas:Create new canvas": false,
       "publish:发布更改": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5a789cd395a5959e",
+  "active": "d85ff7808f7d147e",
   "lastOpenFiles": [
+    "Gateway/ShenYu/ShenYu - Nacos 配置同步.md",
+    "Gateway/ShenYu",
+    "未命名",
+    "Gateway",
     "BigData/Spark/RDD算子.md",
     "未命名 1.canvas",
     "未命名.canvas",

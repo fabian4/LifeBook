@@ -51,17 +51,7 @@ RDD有四大属性：
 2. 接下来，filter算子对wordRDD做过滤，并把它转换为不带空串的cleanWordRDD；
 3. 然后，为了后续的聚合计算，map算子把cleanWordRDD又转换成元素为（Key，Value）对的kvRDD；
 4. 最终，我们调用reduceByKey做分组聚合，把kvRDD中的Value从1转换为单词计数。
-
-在这其中 **RDD到RDD之间的转换，本质上是数据形态上的转换（Transformations）**。
-
-所以根据这一特点 算子被分为两大类：
-- Transformations类算子：定义并描述数据形态的转换过程
-- Actions类算子：将计算结果收集起来、或是物化到磁盘
-
-在这样的编程模型下，Spark在运行时的计算被划分为两个环节。
-
-1.  基于不同数据形态之间的转换，构建**计算流图**（DAG，Directed Acyclic Graph）；
-2.  通过Actions类算子，以**回溯的方式去触发执行**这个计算流图。
+ 
 
 > 开发者调用的各类Transformations算子，并不立即执行计算，当且仅当开发者调用Actions算子时，之前调用的转换算子才会付诸执行。这就被称为 “**延迟计算**”（Lazy Evaluation）。
 
