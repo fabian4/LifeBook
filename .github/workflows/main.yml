@@ -13,7 +13,7 @@ jobs:
         env: 
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-folder: BigData/;Gateway/
+          source-folder: BigData/
           dest-repo: 'fabian4/draftbook'
           dest-folder: 'docs'
           commit-message: 'sync commit'
